@@ -1,4 +1,3 @@
-import { space } from "postcss/lib/list";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const BookDetails = () => {
@@ -8,7 +7,7 @@ const BookDetails = () => {
     const bookIdInt = parseInt(bookId);
 
     const book = books.find(book => book.bookId === bookIdInt);
-    console.log(book)
+    // console.log(book)
 
 
     return (
