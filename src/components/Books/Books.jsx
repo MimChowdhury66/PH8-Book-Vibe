@@ -13,7 +13,7 @@ const Books = () => {
 
     return (
         <div>
-            <h1 className="text-4xl font-bold text-center mt-8 mb-8">Books {books.length} </h1>
+            <h1 className="text-4xl font-bold text-center mt-8 mb-8">Books  </h1>
             <div className="grid lg:grid-cols-3 gap-6 mb-6">
                 {
                     books.map(book => <Book book={book}></Book>)
