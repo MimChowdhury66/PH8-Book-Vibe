@@ -36,7 +36,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/arrival',
-        element: <NewArrival></NewArrival>
+        element: <NewArrival></NewArrival>,
+        loader: () => fetch('NewArrival.json')
       },
       {
         path: '/selling',
