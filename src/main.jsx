@@ -41,7 +41,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/selling',
-        element: <BestSelling></BestSelling>
+        element: <BestSelling></BestSelling>,
+        loader:()=>fetch('BestSelling.json')
       },
       {
         path: '/book/:bookId',

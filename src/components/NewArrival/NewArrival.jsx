@@ -4,7 +4,7 @@ import NewBook from "../NewBook/NewBook";
 const NewArrival = () => {
 
     const newBooks = useLoaderData();
-    console.log(newBooks);
+    // console.log(newBooks);
 
     return (
        

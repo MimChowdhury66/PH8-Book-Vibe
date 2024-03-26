@@ -1,0 +1,75 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "The Law of Success",
+      "author": "George Orwell",
+      "image": "https://i.ibb.co/vxJHDCp/d6243df50-71529.jpg",
+      "review": "A chilling portrayal of a dystopian society where individuality is suppressed and truth is manipulated by those in power. ",
+      "taka": "TK. 328",
+      "rating": 4.5,
+      "category": "Motivational and Meditation",
+      "publisher": "Penguin Books",
+      "yearOfPublishing": 1949
+    },
+    {
+      "bookId": 2,
+      "bookName": "DAN Brown",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/rwhBwb7/The-Lost-Symbol-Dan-Brown-c6a04-53071.jpg",
+      "review": "A powerful story tackling themes of racial injustice and moral growth in the American South.",
+      "taka": "TK. 281",
+      "rating": 4.8,
+      "category": " Mystery, Detective, Horror, Thriller",
+      "publisher": "HarperCollins",
+      "yearOfPublishing": 1960
+    },
+    {
+      "bookId": 3,
+      "bookName": "The Master Key to Riches",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co/WFHjdMw/a38f6f06a-71533.jpg",
+      "review": "An exploration of the American Dream and its pitfalls, set against the backdrop of the Roaring Twenties.",
+      "taka": "TK. 180",
+      "rating": 4.7,
+      "category": " Self-help and meditation",
+      "publisher": "Scribner",
+      "yearOfPublishing": 1925
+    },
+    {
+      "bookId": 4,
+      "bookName": "Cards on the Table",
+      "author": "J.D. Salinger",
+      "image": "https://i.ibb.co/VHSjbQc/9bb8aec23-56166.jpg",
+      "review": "A provocative novel exploring themes of teenage angst, alienation, and the search for identity.",
+      "taka": "TK. 224",
+      "rating": 4.3,
+      "category": "Mystery, Detective, Horror",
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+      "bookId": 5,
+      "bookName": "A New Earth",
+      "author": "J.R.R. Tolkien",
+      "image": "https://i.ibb.co/L08tPRV/53f328d16-90886.jpg",
+      "review": "An enchanting tale of adventure, friendship, and courage set in the fantastical world of Middle-earth.",
+      "taka": "TK. 310",
+      "rating": 4.9,
+      "category": " Self-help and meditation",
+      "publisher": "Houghton Mifflin",
+      "yearOfPublishing": 1937
+    },
+    {
+      "bookId": 6,
+      "bookName": "Broken Republic",
+      "author": "Jane Austen",
+      "image": "https://i.ibb.co/kGx9KZr/11e99b657364-117714.jpg",
+      "review": "A timeless romance featuring memorable characters and witty social commentary.",
+      "taka": "TK. 279",
+      "rating": 4.6,
+      "category": "Politics",
+      "publisher": "T. Egerton, Whitehall",
+      "yearOfPublishing": 1813
+    }
+  ]
+  
