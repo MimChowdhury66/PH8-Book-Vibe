@@ -1,10 +1,36 @@
+import { useEffect, useState } from "react";
 import { FaArrowDown } from "react-icons/fa";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
+import { getStoredReadList } from "../../Utility/localstorage";
 
 const ListedBooks = () => {
+    // const books = useLoaderData();
+    const [tabIndex, setTabIndex] = useState(0);
+
+    // const [bookReadList, setBookReadList] = useState([]);
+
+    // useEffect(() => {
+    //     const storedReadIds = getStoredReadList();
+    //     if (books.length > 0) {
+    //         const readList = [];
+    //         for (const bookId of storedReadIds) {
+    //             const book = books.find(book => book.bookId === bookId);
+    //             if (book) {
+    //                 readList.push(book);
+    //             }
+    //         }
+    //         setBookReadList(readList)
+    //         // console.log(storedReadIds, readList, books)
+
+    //     }
+    // }, [])
+
+
+
     return (
         <div>
             <div className="mt-8 mb-8 bg-slate-200 rounded-2xl">
-                <h1 className="text-3xl font-bold text-center p-4 ">Books</h1>
+                <h1 className="text-3xl font-bold text-center p-4 ">Books </h1>
             </div>
             <div className="flex justify-center">
                 <div className="dropdown ">
@@ -18,6 +44,30 @@ const ListedBooks = () => {
             </div>
 
 
+
+            {/* tab */}
+
+            <div className="flex items-center  overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800 mt-10">
+                <Link to='' onClick={() => setTabIndex(0)} className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex === 0 ? 'border border-b-0' : 'border-b'} rounded-t-lg dark:border-gray-600 dark:text-gray-900`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>Read Books</span>
+
+                </Link>
+                <Link onClick={() => setTabIndex(1)}
+                    to={`wish`}
+                    className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex === 1 ? 'border border-b-0' : 'border-b'} rounded-t-lg dark:border-gray-600 dark:text-gray-900`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                    <span>Wish List Books</span>
+                </Link>
+
+            </div>
+
+            <Outlet></Outlet>
 
 
 

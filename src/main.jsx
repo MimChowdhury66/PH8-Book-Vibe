@@ -13,6 +13,8 @@ import NewArrival from './components/NewArrival/NewArrival';
 import BestSelling from './components/BestSelling/BestSelling';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import BookDetails from './components/BookDetails/BookDetails';
+import ReadBooks from './components/ReadBooks/ReadBooks';
+import WishListBooks from './components/WishListBooks/WishListBooks';
 
 
 
@@ -28,7 +30,20 @@ const router = createBrowserRouter([
       },
       {
         path: '/listed',
-        element: <ListedBooks></ListedBooks>
+        element: <ListedBooks></ListedBooks>,
+        loader: () => fetch('/Books.json'),
+        children: [
+          {
+            index: true,
+            element: <ReadBooks></ReadBooks>,
+            loader: () => fetch('/Books.json')
+          },
+          {
+            path: 'wish',
+            element: <WishListBooks></WishListBooks>,
+            loader: () => fetch('/Books.json')
+          }
+        ]
       },
       {
         path: '/read',
@@ -42,12 +57,12 @@ const router = createBrowserRouter([
       {
         path: '/selling',
         element: <BestSelling></BestSelling>,
-        loader:()=>fetch('BestSelling.json')
+        loader: () => fetch('BestSelling.json')
       },
       {
         path: '/book/:bookId',
         element: <BookDetails></BookDetails>,
-        loader: () => fetch('../Books.json')
+        loader: () => fetch('/Books.json')
       }
     ]
 
