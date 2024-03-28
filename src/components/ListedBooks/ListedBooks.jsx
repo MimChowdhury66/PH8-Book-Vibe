@@ -15,6 +15,7 @@ const ListedBooks = () => {
             <div className="mt-8 mb-8 bg-slate-200 rounded-2xl">
                 <h1 className="text-3xl font-bold text-center p-4 ">Books </h1>
             </div>
+            
             <div className="flex justify-center">
                 <div className="dropdown ">
                     <div tabIndex={0} role="button" className="btn m-1 bg-[#23BE0A] text-white ">Sort By <FaArrowDown />
@@ -26,7 +27,6 @@ const ListedBooks = () => {
                     </ul>
                 </div>
             </div>
-
 
 
             {/* tab */}

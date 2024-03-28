@@ -1,8 +1,23 @@
-# React + Vite
+# Book study cafe
+Live site url: 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Motto- Books to freshen up your bookshelf.
 
-Currently, two official plugins are available:
+# Features and Characteristic-
+- **Home** 
+* Presents a Navbar
+* Book Section with available book cards
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **New Arrival** 
+* Contains New Arrival Books 
+* Can Read or Buy books from this section
+
+- **Best Selling** 
+* Books which are sold most are displayed here
+* Readers can easily find most demanding books here
+
+- **Pages to Read** 
+* Contains a bar chart regarding book name with number of pages
+
+- **Listed Book** 
+* Contains two different tabs called -Read Books and Wish list Books

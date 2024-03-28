@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredReadList } from "../../Utility/localstorage";
+import { FaArrowDown } from "react-icons/fa";
+
 import ReadBook from "../ReadBook/ReadBook";
 
 const ReadBooks = () => {
@@ -20,18 +22,21 @@ const ReadBooks = () => {
                 }
             }
             setBookReadList(readList)
-            console.log(storedReadIds, readList, books)
+            // console.log(storedReadIds, readList, books)
 
         }
     }, [])
 
 
     return (
-        <div className="grid gap-4 ">
+        <div>
             
-            {
-                bookReadList.map(book => <ReadBook book={book}></ReadBook>)
-            }
+            <div className="grid gap-4 ">
+
+                {
+                    bookReadList.map(book => <ReadBook book={book}></ReadBook>)
+                }
+            </div>
         </div>
     );
 };
