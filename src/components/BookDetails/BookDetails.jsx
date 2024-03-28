@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { saveReadList } from "../../Utility/localstorage";
+import { useState } from "react";
 
 
 
@@ -13,11 +14,12 @@ const BookDetails = () => {
     const book = books.find(book => book.bookId === bookIdInt);
     // console.log(book)
 
+
     const handleReadList = () => {
         saveReadList(bookIdInt);
-        toast.success("This book is added to read list")
+        // toast.success("This book is added to read list");
     }
-    
+
 
 
     return (
