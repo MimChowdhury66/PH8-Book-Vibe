@@ -16,6 +16,7 @@ const BookDetails = () => {
 
 
     const handleReadList = () => {
+
         saveReadList(bookIdInt);
     }
     const handleWishList = () => {

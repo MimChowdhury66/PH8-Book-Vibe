@@ -47,7 +47,7 @@ const saveWishList = id => {
 
 
     if (existRead) {
-        toast.warn('You have already read this book')
+        toast.warn('You have already read this')
 
     }
     else if (!exist) {
