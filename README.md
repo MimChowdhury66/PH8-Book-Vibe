@@ -5,19 +5,19 @@ Live site url:
 
 # Features and Characteristic-
 - **Home** 
-*Presents a Navbar
-*Book Section with available book cards
+1. Presents a Navbar
+2. Book Section with available book cards
 
 - **New Arrival** 
-*Contains New Arrival Books 
-*Can Read or Buy books from this section
+1. Contains New Arrival Books 
+2. Can Read or Buy books from this section
 
 - **Best Selling** 
-*Books which are sold most are displayed here
-*Readers can easily find most demanding books here
+1. Books which are sold most are displayed here
+2. Readers can easily find most demanding books here
 
 - **Pages to Read** 
-*Contains a bar chart regarding book name with number of pages
+1. Contains a bar chart regarding book name with number of pages
 
 - **Listed Book** 
-*Contains two different tabs called -Read Books and Wish list Books
+ 1.  Contains two different tabs called -Read Books and Wish list Books
